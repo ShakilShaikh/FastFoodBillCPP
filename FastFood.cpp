@@ -82,7 +82,7 @@ public:
     }
     void putCalc(int n,int it)
     {
-        //cout<<"entering putCalc with "<<n<<" "<<it<<"\n";
+        
         map<int,string> m1;
         m1[1]="Chicken Burger";
         m1[2]="Cheese Burger";
@@ -101,8 +101,8 @@ public:
             {
                 int sub_cost=price*it; // cost
                 cost+=sub_cost;
-               // cout<<m1[id]<<" "<<cost<<"\n";
-                fprintf(fp1,"%s %dx %d\n",m1[id].c_str(),it,sub_cost); // here is the problem
+               
+                fprintf(fp1,"%s %dx %d\n",m1[id].c_str(),it,sub_cost); // you better do some digging for this line, they will ask you about it
 
             }
 
